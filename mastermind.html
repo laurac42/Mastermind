@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mastermind.css">
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <title>Mastermind</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="mastermind.css">
+</head>
+
+<body>
+  <!--Navbar do i actually want one though?
+  <nav class="navbar navbar-expand-md navbar-collapse-sm p-3 navbarStyle flex-column flex-md-row">
+    <div class="container-fluid">
+
+      <a class="navbar-brand text-white" href="index.html">
+        <img src="Styling/LightLogo.png" alt="Logo Design"> 
+      </a>
+
+      <ul class="navbar-nav me-auto mb-2 mr-2 mb-lg-0 flex-row">
+        <li class="nav-item">
+          <a class="nav-link navText" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navText" href="#">Home</a>
+        </li>
+      </ul>
+    
+    </div>
+  </nav> -->
+  <div class="container">
+    <div class="row mt-3 text-center">
+      <div class="col">
+        <h1>Mastermind</h1>
+      </div>
+    </div>
+
+    <!-- Colour display box-->
+    <div class="row">
+      <div class="col-3">
+        <div class="container colours mt-5">
+          <div>
+            <p> Colours </p>
+          </div>
+          <div class="row mx-auto">
+            <span style="background-color:#E29578" class="dot" id="orange"></span>
+            <span style="background-color:#81B29A" class="dot" id="green"></span>
+            <span style="background-color:#F2CC8F" class="dot" id="yellow"></span>
+          </div>
+          <div class="row mx-auto">
+            <span style="background-color:#F4F1DE" class="dot" id="white"></span>
+            <span style="background-color:#f4acb7" class="dot" id="pink"></span>
+            <span style="background-color:#a2d2ff" class="dot" id="blue"></span>
+          </div>
+          <div class="row mx-auto">
+            <button type="button" class="button enter" id="enter">Enter</button>
+            <button type="button" class="button back" id="back">Back</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Board score box -->
+
+      <div class="col-9">
+        <div class="container-md">
+          <div class="board mt-2 mx-5 px-5" id="board">
+            <ul style="list-style-type:none;">
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="scoreBox">
+                    <div class="row mx-auto">
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                      <span class="scoreDot"></span>
+                    </div>
+                  </span>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+
+    <script src="mastermind.js"></script>
+</body>
+
+</html>

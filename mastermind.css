@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --dark: #03071e;
+    --circle: #787EB6;
+    --background: #22223b;
+    --text: #f4f1de;
+    --accentlight: #f2cc8f;
+    --mainpink: #FFDDD2;
+    --secondpink: #E29578;
+    --highlight: #bdc0db;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', bold;
+    text-align: center;
+    color: var(--text);
+    border-bottom-color: var(--accentlight);
+    border-bottom-width: 5px;
+    border-bottom-style: dotted;
+}
+
+h1 {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Oswald', bold;
+    text-align: center;
+    color: var(--text);
+}
+
+.navbar {
+    background-color: #03071e;
+    color: var(--text);
+
+}
+
+.navText {
+    color: var(--text);
+}
+
+.board {
+    background-color: var(--dark);
+    max-width: 450px;
+    padding: 20px;
+}
+
+.highlight {
+    height: 40px;
+    width: 40px;
+    background-color: var(--circle);
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: var(--background);
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.scoreBox {
+    height: 40px;
+    width: 45px;
+    background-color: #22223b;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.highlightScoreBox {
+    height: 40px;
+    width: 45px;
+    background-color: #787EB6;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.scoreDot {
+    height: 3px;
+    width: 3px;
+    background-color: var(--dark);
+    border-radius: 50%;
+    padding: 4px;
+    margin-top: 7px;
+    margin-left: 2px;
+
+    display: inline-block;
+}
+
+.scoreDotExact {
+    height: 3px;
+    width: 3px;
+    background-color: #028043;
+    border-radius: 50%;
+    padding: 4px;
+    margin-top: 7px;
+    margin-left: 2px;
+
+    display: inline-block;
+}
+
+.scoreDotPartial {
+    height: 3px;
+    width: 3px;
+    background-color: #e2e04f;
+    border-radius: 50%;
+    padding: 4px;
+    margin-top: 7px;
+    margin-left: 2px;
+
+    display: inline-block;
+}
+
+
+.orange {
+    height: 40px;
+    width: 40px;
+    background-color: #E29578;
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.yellow {
+    height: 40px;
+    width: 40px;
+    background-color: #F2CC8F;
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.green {
+    height: 40px;
+    width: 40px;
+    background-color: #81B29A;
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.white {
+    height: 40px;
+    width: 40px;
+    background-color: #F4F1DE;
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.pink {
+    height: 40px;
+    width: 40px;
+    background-color: #f4acb7;
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.blue {
+    height: 40px;
+    width: 40px;
+    background-color: #a2d2ff;
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color: var(--circle);
+    border-radius: 50%;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.button {
+    height: 40px;
+    width: 55px;
+    color: var(--text);
+    font-family: 'Oswald', bold;
+    text-align: center;
+    font-size: small;
+    margin: auto;
+
+}
+
+.colours {
+    max-width: 200px;
+    background-color: var(--dark);
+    padding: 20px;
+}
+
+.score {
+    background-color: var(--dark);
+    margin: auto;
+    padding: 20px;
+}
+
+.enter {
+    background-color: #028043;
+    padding: 2px;
+    margin: 2px;
+    
+}
+
+.back {
+    background-color: #940319;
+}
